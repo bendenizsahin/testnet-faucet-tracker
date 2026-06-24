@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testnet Faucet Tracker</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent2: #06b6d4;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --green: #22c55e;
+      --yellow: #eab308;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.25rem;
+    }
+
+    header .label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent2);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+    }
+
+    .chain-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      letter-spacing: 0.05em;
+    }
+
+    .card-body { flex: 1; min-width: 0; }
+
+    .card-body h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-body .meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .status {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .status.active { background: #14532d; color: var(--green); }
+    .status.maintenance { background: #713f12; color: var(--yellow); }
+
+    .faucet-link {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent2);
+      text-decoration: none;
+      border: 1px solid var(--accent2);
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+
+    .faucet-link:hover {
+      background: var(--accent2);
+      color: var(--bg);
+    }
+
+    footer {
+      max-width: 800px;
+      margin: 3rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="label">bendenizsahin · testnet activity</div>
+    <h1>Faucet Tracker</h1>
+    <p>Active testnets, faucet links, and deployment status.</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="chain-icon" style="background:#1a0a2e; color:#a78bfa;">ARC</div>
+      <div class="card-body">
+        <h2>ARC Testnet</h2>
+        <div class="meta">EVM · Multicall3From · CCTP Bridge</div>
+      </div>
+      <span class="status active">ACTIVE</span>
+      <a class="faucet-link" href="https://faucet.arc.fun" target="_blank">Faucet →</a>
+    </div>
+
+    <div class="card">
+      <div class="chain-icon" style="background:#0a1a2e; color:#38bdf8;">INK</div>
+      <div class="card-body">
+        <h2>INK Sepolia</h2>
+        <div class="meta">EVM · L2 · RPC issues under monitoring</div>
+      </div>
+      <span class="status maintenance">MAINTENANCE</span>
+      <a class="faucet-link" href="https://inkonchain.com/faucet" target="_blank">Faucet →</a>
+    </div>
+
+    <div class="card">
+      <div class="chain-icon" style="background:#0a1f0a; color:#4ade80;">RBH</div>
+      <div class="card-body">
+        <h2>Robinhood Testnet</h2>
+        <div class="meta">EVM · Hub V2 deployed</div>
+      </div>
+      <span class="status active">ACTIVE</span>
+      <a class="faucet-link" href="#" target="_blank">Faucet →</a>
+    </div>
+
+    <div class="card">
+      <div class="chain-icon" style="background:#001a2e; color:#60a5fa;">BASE</div>
+      <div class="card-body">
+        <h2>Base Sepolia</h2>
+        <div class="meta">EVM · CCTP V2 · Circle Bridge target</div>
+      </div>
+      <span class="status active">ACTIVE</span>
+      <a class="faucet-link" href="https://faucet.quicknode.com/base/sepolia" target="_blank">Faucet →</a>
+    </div>
+
+    <div class="card">
+      <div class="chain-icon" style="background:#1a1a0a; color:#facc15;">GIWA</div>
+      <div class="card-body">
+        <h2>GIWA Sepolia</h2>
+        <div class="meta">EVM · CheckmateNFT deployed</div>
+      </div>
+      <span class="status active">ACTIVE</span>
+      <a class="faucet-link" href="#" target="_blank">Faucet →</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>github.com/bendenizsahin</span>
+    <span>last updated: 2025-06</span>
+  </footer>
+
+</body>
+</html>
