@@ -17,7 +17,7 @@ A simple tracker for active testnets, faucet links, and deployment status.
 | GIWA Sepolia | ✅ Active | [faucet.giwa.io](https://faucet.giwa.io/#/) |
 
 ## Live
-
+[bendenizsahin.github.io/testnet-faucet-tracker](https://bendenizsahin.github.io/testnet-faucet-tracker)
 ## Projects
 
 | Project | Link |
