@@ -1,0 +1,49 @@
+{
+  "chains": [
+    {
+      "name": "Robinhood Testnet",
+      "chainId": 46630,
+      "rpc": "https://rpc.testnet.chain.robinhood.com/rpc",
+      "explorer": "https://explorer.testnet.chain.robinhood.com",
+      "faucet": "https://faucet.testnet.chain.robinhood.com/",
+      "currency": "ETH",
+      "status": "active"
+    },
+    {
+      "name": "ARC Testnet",
+      "chainId": 5042002,
+      "rpc": "https://rpc.testnet.arc.network",
+      "explorer": "https://testnet.arcscan.app",
+      "faucet": "https://faucet.circle.com/",
+      "currency": "ETH",
+      "status": "active"
+    },
+    {
+      "name": "INK Sepolia",
+      "chainId": 763373,
+      "rpc": "https://rpc-gel-sepolia.inkonchain.com",
+      "explorer": "https://explorer-sepolia.inkonchain.com",
+      "faucet": "https://inkonchain.com/faucet",
+      "currency": "ETH",
+      "status": "active"
+    },
+    {
+      "name": "GIWA Sepolia",
+      "chainId": 91342,
+      "rpc": "https://sepolia-rpc.giwa.io",
+      "explorer": "https://sepolia-explorer.giwa.io",
+      "faucet": "https://faucet.giwa.io/#/",
+      "currency": "ETH",
+      "status": "active"
+    },
+    {
+      "name": "Base Sepolia",
+      "chainId": 84532,
+      "rpc": "https://sepolia.base.org",
+      "explorer": "https://sepolia-explorer.base.org",
+      "faucet": "https://docs.base.org/base-chain/network-information/network-faucets",
+      "currency": "ETH",
+      "status": "active"
+    }
+  ]
+}
