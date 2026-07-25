@@ -30,3 +30,8 @@ A simple tracker for active testnets, faucet links, and deployment status.
 ## Author
 
 [github.com/bendenizsahin](https://github.com/bendenizsahin)
+
+## Stats
+
+![Commits](https://img.shields.io/github/commit-activity/m/bendenizsahin/testnet-faucet-tracker)
+![Last Commit](https://img.shields.io/github/last-commit/bendenizsahin/testnet-faucet-tracker)
