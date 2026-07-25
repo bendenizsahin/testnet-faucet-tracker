@@ -18,6 +18,13 @@ A simple tracker for active testnets, faucet links, and deployment status.
 
 ## Live
 
+## Projects
+
+| Project | Link |
+|---------|------|
+| RurouniYu Hub V2 | [rurouniyuhub-v2.vercel.app](https://rurouniyuhub-v2.vercel.app/) |
+| RYU Swap & Bridge | [rurouniyu-swap.vercel.app](https://rurouniyu-swap.vercel.app) |
+
 [bendenizsahin.github.io/testnet-faucet-tracker](https://bendenizsahin.github.io/testnet-faucet-tracker)
 
 ## Author
